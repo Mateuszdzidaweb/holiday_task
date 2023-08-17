@@ -1,0 +1,238 @@
+:root {
+    --gray-select: #828181;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.container-wrapper{
+    background-image: url(../src/images/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+}
+
+.container{
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.blur{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: #00000030;
+    backdrop-filter: blur(30px);
+    position: fixed;
+    border-bottom: 1px solid var(--gray-select);;
+}
+
+header{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    padding: 15px 0;
+}
+
+.wrap{
+    z-index: 999;
+}
+
+.logo{
+    z-index: 99;
+}
+
+.logo > h2{
+    color: white;
+}
+
+.nav-wrapper{
+    flex-grow: 1;
+    z-index: 99;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    align-items: baseline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.action-btn{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: baseline;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background: black;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.action-btn:hover{
+    background:white;
+    transition: ease-in-out 0.3s;
+}
+
+.action-btn:hover a {
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+.action-btn:hover .fa-arrow-right{
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+@keyframes bounceRight {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+    40% {
+      -ms-transform: translateX(-10px);
+      transform: translateX(-10px);
+    }
+    60% {
+      -ms-transform: translateX(-15px);
+      transform: translateX(-15px);
+    }
+  }
+
+.action-btn:hover .fa-arrow-right{
+    animation: bounceRight 2s infinite;
+}
+
+.action-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.fa-arrow-right{
+    color: white;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    25% { opacity: 0.3;}
+    50% { opacity: 0.5;}
+    75% { opacity: 0.8; }
+    100% { opacity: 1;}
+  }
+
+  .fade-in{
+    animation: fadeIn 1s;
+    
+}
+
+.heading{
+    color: white;
+    width: 800px;
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 0px 3px black;
+    animation: fadeIn 1s;
+}
+
+.content{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    height: auto;
+    padding: 30px 0;
+}
+
+.content  h3{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.select-widget{
+    border-bottom: 1px solid black;
+    padding: 0 0 10px 0;
+    flex-grow: 1;
+}
+
+.select-widget select{
+    border: none;
+    font-size: 20px;
+}
+
+.select-location{
+    color: var(--gray-select);
+}
+.select-wrapper{
+    display: flex;
+}
+
+.fa-location-arrow,
+.fa-user,
+.fa-bed{
+    font-size: 24px;
+    align-items: center;
+    padding: 5px 10px 5px 0;
+}
+
+.fa-magnifying-glass{
+    color: white;
+}
+
+select{
+    flex-grow: 1;
+}
+
+.search{
+    display: flex;
+    background: black;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.search:hover{
+    background-color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.search:hover > .fa-magnifying-glass{
+    color: black;
+    transition: ease-in-out 0.3s;
+
+}
+
